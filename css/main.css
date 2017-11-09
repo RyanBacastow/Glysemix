@@ -14,7 +14,7 @@
     border-radius: 10px;
     border-width: medium;
     border-style: outset;
-    opacity: .92;
+    opacity: .98;
 }
 
 /**********************Header**********************/
@@ -26,6 +26,21 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Bree Serif', serif;
 font-family: 'Varela Round', sans-serif;*/
 
+.fluidMedia {
+    position: relative;
+    padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.fluidMedia iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width:100%;
+    height: 100%;
+}
 
 #headerWell {
     padding: 1px;
@@ -33,7 +48,6 @@ font-family: 'Varela Round', sans-serif;*/
     text-align: center;
     text-align: center;
     color: black;
-    opacity: .90;
     font-family: 'Bree Serif', serif;
     font-size: 13px;
 }
@@ -56,6 +70,9 @@ h3 {
     font-family: 'Varela Round', sans-serif;
 }
 
+#listTitle{
+	font-size: 1.2em;
+}
 /**********************Footer**********************/
 
 footer {
@@ -67,7 +84,7 @@ footer {
 
 /**********************nav pills**********************/
 
-nav, {
+nav {
     padding: 1px;
     margin: 1px;
     text-align: center;
@@ -78,10 +95,11 @@ nav, {
     font-size: 1.2em;
 }
 
+
 /**********************Table**********************/
 
 #resultsTable {
-    opacity: .85;
+    opacity: .95;
     font-size: 1.3em;
     text-align: center;
     font-family: 'Bree Serif', serif;
@@ -106,7 +124,7 @@ nav, {
 
 .animate-show.ng-hide-add,
 .animate-show.ng-hide-remove {
-    transition: all linear 0.6s;
+    transition: all linear;
 }
 
 .animate-show.ng-hide {
@@ -127,13 +145,12 @@ nav, {
     font-family: 'Bree Serif', serif;
     opacity: 1;
     font-size: 1em;
+	padding-bottom: 1.3em;
+	padding-left: 1em;
 }
 
 ul{
     list-style: none;
-}
-
-.dropdown-menu{
 }
 
 #sugarLinks{
@@ -141,13 +158,11 @@ ul{
     font-size: 1.3em;
     float: left;
     text-decoration: none;
-    padding-top: 1em;
-    padding-left: 2em;
     padding-right: 1.5em;
 }
 
 a{
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 #link_list{
@@ -157,16 +172,23 @@ a{
   text-decoration: none;
 }
 
-@media only screen and (max-width: 400px) {
-   body,li,nav,ul,table,tr,td,img,form,footer,.well {
+#disclaimer{
+	font-size: .7em
+}
+
+@media only screen and (max-width: 768px) {
+   body,li,nav,ul,table,tr,td,img,form,footer,.well, {
       font-size: 85%;
    }
-    h1,h3 {
+    h1 {
       font-size: 3em;
    }
     h2 {
       font-size: 2em;
     }
+	h3 {
+	  font-size: 1em;
+	}
     #searchHeader {
         font-size: 1em;
     }
@@ -177,16 +199,55 @@ a{
         font-size:1.2em;
         padding: .7em;
     }
+	#tableDiv{
+	  overflow-x: auto;
+	  overflow-y: auto;
+	  white-space: nowrap;
+		}
+
+	#disclaimer{
+		font-size: .5em;
+	}
+
+	#sugarLinks{
+		font-family: 'Bree Serif', serif;
+		font-size: 1.2em;
+		float: left;
+		text-decoration: none;
+		padding-right: 1em;
+	}
+	
+	#navTabs1{
+		font-size: 70%;
+	}
+	.dropdown-menu{
+		font-size: 70%;
+	}
+	.fluidMedia {
+    position: relative;
+    padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    padding-top: 30px;
+    height: 100%;
+	width: 100%;
+    overflow: hidden;
+	float: right;
 }
-@media only screen and (min-width: 1000px) {
-#navTitles{
-    margin-left: 16em;
-    margin-right: 4em;
-    }
+	.fluidMedia iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width:100%;
+    height: 100%;
+}
 }
 
-#tableDiv{
-  overflow-x: auto;
-  overflow-y: auto;
-  white-space: nowrap;
+@media only screen and (min-width: 1000px) {
+	#navTitles{
+		margin-left: 16em;
+		margin-right: 4em;
+		}
 }
+
+
+
+
