@@ -14,7 +14,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div id="navTitles">
             <ul class="nav navbar-nav nav-tabs " role="tablist" id='navTabs1'>
-                <li role="presentation"><a ng-href="#/" role="tab" data-toggle="tab">Home/Search</a></li>
+                <li role="presentation"><a ng-href="#/" role="tab" data-toggle="tab">Home</a></li>
                 <li role="presentation"><a ng-href="#/sugar-and-health" role="tab" data-toggle="tab">Sugar and Health</a></li>
 <!--                <li role="presentation"><a ng-href="#/glycemic-index" role="tab" data-toggle="tab">Glycemic Index</a></li>-->
                 <li class="dropdown" id='searchDropdown'>
@@ -27,12 +27,14 @@
                         <li role="presentation"><a ng-href="#/" role="tab" data-toggle="tab"><a ng-href="#/search3">Search by <strong>Ingredients</strong></a></a></li>
                         <li role="separator" class="divider"></li>
                     </ul>
-                </li>
-                <form class="navbar-form navbar-left">
+				</li>
+            </ul>
+			<div id="formDiv">
+				<form class="navbar-form navbar-left">
                     <input class="form-control" type='text' placeholder="Seach a product, restaurant, or indgredient" ng-model="userInput" id="input1">
                     <button type="submit" class="btn btn-default" ng-click="searchFunction()">Search</button>
                 </form>
-            </ul>
+			</div>
         </div>
         <!-- /.navbar-collapse -->
     </div>

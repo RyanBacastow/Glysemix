@@ -26,21 +26,6 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Bree Serif', serif;
 font-family: 'Varela Round', sans-serif;*/
 
-.fluidMedia {
-    position: relative;
-    padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.fluidMedia iframe {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width:100%;
-    height: 100%;
-}
 
 #headerWell {
     padding: 1px;
@@ -85,6 +70,8 @@ footer {
 /**********************nav pills**********************/
 
 nav {
+	align-content: center;
+	align-self: center;
     padding: 1px;
     margin: 1px;
     text-align: center;
@@ -143,26 +130,12 @@ nav {
 #youtubeWell{
     text-align: center;
     font-family: 'Bree Serif', serif;
-    opacity: 1;
-    font-size: 1em;
-	padding-bottom: 1.3em;
-	padding-left: 1em;
 }
 
-ul{
-    list-style: none;
-}
 
-#sugarLinks{
-    font-family: 'Bree Serif', serif;
-    font-size: 1.3em;
-    float: left;
-    text-decoration: none;
-    padding-right: 1.5em;
-}
 
 a{
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #link_list{
@@ -176,10 +149,23 @@ a{
 	font-size: .7em
 }
 
-@media only screen and (max-width: 768px) {
+
+/*********************************MOBILE***************************************/
+
+@media only screen and (max-width: 600px) {
    body,li,nav,ul,table,tr,td,img,form,footer,.well, {
-      font-size: 85%;
+      font-size: 89%;
    }
+	.nav {
+		padding-left: 9%
+	}
+	.nav li a { 
+    	padding: 2px 3px;
+	}
+	.dropdown-menu li a{
+		padding: 0 0 0 0;
+	}
+	
     h1 {
       font-size: 3em;
    }
@@ -190,11 +176,9 @@ a{
 	  font-size: 1em;
 	}
     #searchHeader {
-        font-size: 1em;
+        font-size: .9em;
     }
-    #youtubeWell{
-        resize: both;
-    }
+	
     .dropdown-menu{
         font-size:1.2em;
         padding: .7em;
@@ -212,17 +196,22 @@ a{
 	#sugarLinks{
 		font-family: 'Bree Serif', serif;
 		font-size: 1.2em;
-		float: left;
 		text-decoration: none;
-		padding-right: 1em;
 	}
+	
+	ul{
+		padding: .01%;
+		padding-right: 10%
+		}
 	
 	#navTabs1{
 		font-size: 70%;
 	}
+	
 	.dropdown-menu{
 		font-size: 70%;
 	}
+	
 	.fluidMedia {
     position: relative;
     padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
@@ -230,24 +219,82 @@ a{
     height: 100%;
 	width: 100%;
     overflow: hidden;
-	float: right;
-}
+	}
+	
 	.fluidMedia iframe {
     position: absolute;
     top: 0; 
     left: 0;
     width:100%;
     height: 100%;
-}
+	padding-bottom: 14px;
+	}
+	#youtubeWell{
+		margin-left: 10%;
+	}
 }
 
-@media only screen and (min-width: 1000px) {
+/*****************************FULLSCREEN***************************************/
+
+@media only screen and (min-width: 993px) {
 	#navTitles{
-		margin-left: 16em;
-		margin-right: 4em;
+		margin-left: 27%
 		}
+	form.navbar-form {
+		padding-left: 16%
+	}
+	
+	#sugarLinks{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3em;
+    float: left;
+    text-decoration: none;	
+	}
+	#youtubeWell{
+		padding-left: 32%;
+	}
 }
 
+/*********************************IPAD***************************************/
+
+@media only screen and (min-width: 600px) and (max-width: 993px){
+	#youtubeWell{
+		padding-left: 20%;
+	}
+	form.navbar-form {
+		padding-left:20%
+	}
+	#navTitles{
+		margin-left: 12%
+	}
+	
+	#sugarLinks{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3em;
+    float: left;
+    text-decoration: none;
+}
+	
+	.fluidMedia {
+    position: relative;
+    padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    padding-top: 30px;
+    height: 100%;
+	width: 100%;
+    overflow: hidden;
+	}
+	
+	.fluidMedia iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width:100%;
+    height: 100%;
+	}
+	ul{
+
+		}	
+}
 
 
 
