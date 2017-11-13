@@ -18,19 +18,6 @@ app.controller('myController', function ($scope, $http) {
             }
         }).then(function (response) {
             $scope.nutrition = response.data.hits;
-            
-//          function foodQuality{ 
-//            if (nf_carbohydrate <= 18){
-//                color=1;
-//            }
-//            elseif (nf_carbohydrate >= 19 && nf_carbohydrate < 35){
-//                color=2;
-//            }
-//            elseif (nf_carbohydrate >=35){
-//                color=3;
-//            }
-//            else {color = 0}
-//            }
         });
     };
 });
@@ -46,10 +33,10 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         templateUrl: "templates/sugar-and-health.html",
     }).when("/search1", {
         templateUrl: "templates/search1.html",
-}).when("/search3", {
+    }).when("/search3", {
         templateUrl: "templates/search3.html",
         controller: function () {}
-    }); 
+    });
 }]);
 
 app.directive("navBar", function () {
@@ -57,18 +44,11 @@ app.directive("navBar", function () {
         restrict: "E",
         templateUrl: "templates/nav-bar.html"
     }
-}); 
+});
 
 app.directive("tableResults", function () {
     return {
         restrict: "E",
         templateUrl: "templates/table-results.html"
-    }
-});
-
-app.directive("tableResultsMobile", function () {
-    return {
-        restrict: "E",
-        templateUrl: "templates/table-results-mobile.html"
     }
 });

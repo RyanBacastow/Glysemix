@@ -1,18 +1,24 @@
 /**********************Full Document**********************/
+
 .background {
-    background-image:url(/img/Produce.jpg);
-    background-size:cover;
+    background-image: url(/img/Produce.jpg);
+    background-size: cover;
 }
 
-#disclaimer{
-		font-size: .5em;
-	}
+#disclaimer {
+    font-size: .5em;
+}
+
+
 /**********************containers**********************/
 
 .nav {
-    border:none;
+    border: none;
 }
+
+
 /**********************Wells**********************/
+
 .well {
     border-radius: 10px;
     border-width: medium;
@@ -20,7 +26,9 @@
     opacity: .98;
 }
 
+
 /**********************Header**********************/
+
 #headerWell {
     position: relative;
     padding: auto;
@@ -31,35 +39,37 @@
     font-family: 'Bree Serif', serif;
 }
 
-h1{
+h1 {
     font-family: 'Lobster', cursive;
 }
 
-h2{
+h2 {
     font-family: 'Lobster', cursive;
 }
 
-
-#searchHeader{
+#searchHeader {
     font-family: 'Varela Round', sans-serif;
 }
 
-#listTitle{
-	font-size: 1.2em;
+#listTitle {
+    font-size: 1.2em;
 }
+
+
 /**********************Footer**********************/
 
 footer {
     color: white;
     text-align: center;
-    font-family: 'Lobster' , cursive;
+    font-family: 'Lobster', cursive;
 }
+
 
 /**********************nav pills**********************/
 
 nav {
-	align-content: center;
-	align-self: center;
+    align-content: center;
+    align-self: center;
     padding-right: auto;
     padding-left: auto;
     margin: auto;
@@ -78,7 +88,6 @@ nav {
 
 
 /**********************Form**********************/
-
 
 
 /*********************TABLE ANIMATIONS*********************/
@@ -108,111 +117,108 @@ nav {
 
 
 /*********************sugar-and-health.html*********************/
-#youtubeWell{
+
+#youtubeWell {
     text-align: center;
     font-family: 'Bree Serif', serif;
 }
 
-#link_list{
-  padding-top: 1px;
-  font-family: 'Varela Round', sans-serif;
-  list-style: none;
-  text-decoration: none;
+#link_list {
+    padding-top: 1px;
+    font-family: 'Varela Round', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
-#disclaimer{
-	font-size: .7em
+#disclaimer {
+    font-size: .7em
 }
 
 
 /*********************************MOBILE***************************************/
 
 @media only screen and (max-width: 626px) {
-   body,li,nav,ul,table,tr,td,img,form,footer,.well, {
-      font-size: 1.2em;
-   }
-    
-    #navTabs1{
+    body,
+    li,
+    nav,
+    ul,
+    table,
+    tr,
+    td,
+    img,
+    form,
+    footer,
+    .well,
+    {
+        font-size: 1.2em;
+    }
+    #navTabs1 {
         padding-left: 19%
     }
-    #newContainer{
+    #newContainer {
         padding-left: 10%;
         padding-right: 10%;
     }
-	.nav li a { 
-    	padding: 2px 3px;
+    .nav li a {
+        padding: 2px 3px;
         margin: auto;
-	}
-    
-	.dropdown-menu li a{
-		height: 1px
-	}
-	
-    h1 {
-      font-size: 3.6em;
-   }
-    h2 {
-      font-size: 2.5em;
     }
-	h3 {
-	  font-size: 1.4em;
-	}
-
+    .dropdown-menu li a {
+        height: 1px
+    }
+    h1 {
+        font-size: 3.6em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
     #searchHeader {
         font-size: .9em;
     }
-	
-    .dropdown-menu{
-        font-size:1.2em;
+    .dropdown-menu {
+        font-size: 1.2em;
         padding: .7em;
     }
-    
-
-	#tableDiv{
-	  overflow-x: auto;
-	  overflow-y: auto;
-	  white-space: nowrap;
+    #tableDiv {
+        overflow-x: auto;
+        overflow-y: auto;
+        white-space: nowrap;
     }
-
-
-
-	#sugarLinks{
-		font-family: 'Bree Serif', serif;
-		font-size: 1.2em;
-		text-decoration: none;
-	}
-	
-	ul{
-		padding: .01%;
-		padding-right: 10%
-		}
-	
-	.dropdown-menu{
-		font-size: 70%;
-	}
-	
+    #sugarLinks {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+    ul {
+        padding: .01%;
+        padding-right: 10%
+    }
+    .dropdown-menu {
+        font-size: 70%;
+    }
     .fluidMedia {
         position: relative;
-        padding-bottom: 35%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-bottom: 35%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
         padding-top: 21%;
         height: 100%;
         width: 100%;
         overflow: hidden;
-	}
-	
-	.fluidMedia iframe {
+    }
+    .fluidMedia iframe {
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
-        width:100%;
+        width: 100%;
         height: 100%;
-	}
-    
-	#youtubeWell{
-		margin-left: 10%;
-	}
-    
-    #youtubeWell li a{
+    }
+    #youtubeWell {
+        margin-left: 10%;
+    }
+    #youtubeWell li a {
         font-size: 1.3em
     }
     #resultsTable {
@@ -223,249 +229,223 @@ nav {
     }
 }
 
+
 /*********************************IPAD***************************************/
 
-
-
-@media only screen and (min-width: 626px) and (max-width: 769px){
-	#youtubeWell{
-		padding-left: 12%;
-	}
-    
-	.dropdown-menu li a{
-		height: 1px;
-	}
-    
-    #newContainer{
+@media only screen and (min-width: 626px) and (max-width: 769px) {
+    #youtubeWell {
+        padding-left: 12%;
+    }
+    .dropdown-menu li a {
+        height: 1px;
+    }
+    #newContainer {
         padding-left: 17%;
     }
-    
-	form.navbar-form {
+    form.navbar-form {
         padding-left: 17%;
         max-width: 75%;
-	}
-    
-    h1{
+    }
+    h1 {
         font-size: 4.3em;
     }
-    
-    h2{
+    h2 {
         font-size: 2.7em;
     }
-    
-	#sugarLinks{
+    #sugarLinks {
         font-family: 'Bree Serif', serif;
         font-size: 1.3em;
         float: left;
         text-decoration: none;
     }
-    
     #resultsTable {
         opacity: .95;
         font-size: 1.3em;
         text-align: center;
         font-family: 'Bree Serif', serif;
-}
-    #navTabs1{
+    }
+    #navTabs1 {
         font-size: 1.3em;
     }
-    
     .fluidMedia {
         position: relative;
-        padding-bottom: 34%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-bottom: 34%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
         padding-top: 85px;
         height: 100%;
         width: 100%;
         overflow: hidden;
-	}
-	
-	.fluidMedia iframe {
+    }
+    .fluidMedia iframe {
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
-        width:100%;
+        width: 100%;
         height: 100%;
-	}
-    #youtubeWell li a{
+    }
+    #youtubeWell li a {
         font-size: 1.3em
     }
 }
+
+
 /*****************************Medium***************************************/
 
 @media only screen and (min-width: 769px) and (max-width:993px) {
-    h1{
+    h1 {
         font-size: 5em;
     }
-    
-    h2{
+    h2 {
         font-size: 2.5em;
     }
-
-	form.navbar-form {
+    form.navbar-form {
         padding-left: 14%;
-		padding-right:10%;
-	}
-	
-	#sugarLinks{
+        padding-right: 10%;
+    }
+    #sugarLinks {
         font-family: 'Bree Serif', serif;
         font-size: 1.3em;
         float: left;
-        text-decoration: none;	
-	}
-	#youtubeWell{
-		padding-left: 17%;
-	}
+        text-decoration: none;
+    }
+    #youtubeWell {
+        padding-left: 17%;
+    }
     #newContainer {
-        padding-left:18%;
+        padding-left: 18%;
     }
     #resultsTable {
         font-size: 1.3em;
         text-align: center;
     }
-    
-    #navTabs1{
+    #navTabs1 {
         font-size: 1.3em;
     }
-    
     .fluidMedia {
         position: relative;
-        padding-bottom: 34%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-bottom: 34%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
         padding-top: 54px;
         height: 100%;
         width: 100%;
         overflow: hidden;
-	}
-	
-	.fluidMedia iframe {
+    }
+    .fluidMedia iframe {
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
-        width:100%;
+        width: 100%;
         height: 100%;
-	}
-    #youtubeWell li a{
+    }
+    #youtubeWell li a {
         font-size: 1.3em
     }
 }
+
+
 /*****************************LARGE***************************************/
 
 @media only screen and (min-width: 994px) and (max-width:1200px) {
-    h1{
+    h1 {
         font-size: 5.5em;
     }
-    
-    h2{
+    h2 {
         font-size: 2.7em;
     }
-
-	form.navbar-form {
+    form.navbar-form {
         padding-left: 17%;
-		padding-right:18%;
-	}
-	
-	#sugarLinks{
+        padding-right: 18%;
+    }
+    #sugarLinks {
         font-family: 'Bree Serif', serif;
         font-size: 1.3em;
         float: left;
-        text-decoration: none;	
-	}
-    
-	#youtubeWell{
-		padding-left:18%;
-	}
-    
-    #youtubeWell li a{
+        text-decoration: none;
+    }
+    #youtubeWell {
+        padding-left: 18%;
+    }
+    #youtubeWell li a {
         font-size: 1.3em
     }
-    
     #newContainer {
-        padding-left:20%;
+        padding-left: 20%;
     }
-    
     #resultsTable {
         font-size: 1.3em;
         text-align: center;
     }
-    
-    #navTabs1{
+    #navTabs1 {
         font-size: 1.7em;
     }
     .fluidMedia {
         position: relative;
-        padding-bottom: 34%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-bottom: 34%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
         padding-top: 54px;
         height: 280px;
         width: 500px;
         overflow: hidden;
-	}
-	
-	.fluidMedia iframe {
+    }
+    .fluidMedia iframe {
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
-        width:100%;
+        width: 100%;
         height: 100%;
-	}
-    
-    
+    }
 }
 
+
 /*****************************FullScreen***************************************/
+
 @media only screen and (min-width: 1200px) {
-    h1{
+    h1 {
         font-size: 6em;
     }
-    h2{
+    h2 {
         font-size: 3em;
     }
-
-	form.navbar-form {
+    form.navbar-form {
         padding-left: 18%;
-		padding-right:18%;
-	}
-	
-	#sugarLinks{
+        padding-right: 18%;
+    }
+    #sugarLinks {
         font-family: 'Bree Serif', serif;
         font-size: 1.3em;
         float: left;
-        text-decoration: none;	
-	}
-    
-	#youtubeWell{
-		padding-left: 15%;
-	}
-    
-    #newContainer {
-        padding-left:23%;
+        text-decoration: none;
     }
-    
+    #youtubeWell {
+        padding-left: 15%;
+    }
+    #newContainer {
+        padding-left: 23%;
+    }
     #resultsTable {
         font-size: 1.3em;
         text-align: center;
     }
-    
-    #navTabs1{
+    #navTabs1 {
         font-size: 2em;
     }
     .fluidMedia {
         position: relative;
-        padding-bottom: 34%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-bottom: 34%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
         padding-top: 54px;
         height: 400px;
         width: 700px;
         overflow: hidden;
-	}
-	
-	.fluidMedia iframe {
+    }
+    .fluidMedia iframe {
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
-        width:100%;
+        width: 100%;
         height: 100%;
-	}
-    #youtubeWell li a{
+    }
+    #youtubeWell li a {
         font-size: 1.5em
     }
 }
-
-
