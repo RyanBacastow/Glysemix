@@ -1,14 +1,14 @@
 /**********************Full Document**********************/
-
 .background {
     background-image:url(/img/Produce.jpg);
     background-size:cover;
 }
 
 /**********************containers**********************/
-.container {
-}
 
+.nav {
+    border:none;
+}
 /**********************Wells**********************/
 .well {
     border-radius: 10px;
@@ -18,38 +18,24 @@
 }
 
 /**********************Header**********************/
-/*
-font-family: 'Baloo', cursive;
-font-family: 'Arvo', serif;
-font-family: 'Lobster', cursive;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Bree Serif', serif;
-font-family: 'Varela Round', sans-serif;*/
-
-
 #headerWell {
-    padding: 1px;
-    margin: 1px;
+    position: relative;
+    padding: auto;
+    margin: auto;
     text-align: center;
     text-align: center;
     color: black;
     font-family: 'Bree Serif', serif;
-    font-size: 13px;
 }
 
 h1{
-    font-size: 6em;
     font-family: 'Lobster', cursive;
 }
 
 h2{
-    font-size: 4.5em;
     font-family: 'Lobster', cursive;
 }
 
-h3 {
-    font-size: 1.3em;
-}
 
 #searchHeader{
     font-family: 'Varela Round', sans-serif;
@@ -63,7 +49,6 @@ h3 {
 footer {
     color: white;
     text-align: center;
-    font-size: 2em;
     font-family: 'Lobster' , cursive;
 }
 
@@ -72,32 +57,25 @@ footer {
 nav {
 	align-content: center;
 	align-self: center;
-    padding: 1px;
-    margin: 1px;
+    padding-right: auto;
+    padding-left: auto;
+    margin: auto;
     text-align: center;
-    color: black;
     opacity: 1;
     font-family: 'Varela Round', sans-serif;
-    color: black;
-    font-size: 1.2em;
 }
 
 
 /**********************Table**********************/
 
 #resultsTable {
-    opacity: .95;
-    font-size: 1.3em;
-    text-align: center;
+    opacity: .99;
     font-family: 'Bree Serif', serif;
 }
 
 
 /**********************Form**********************/
 
-#myForm {
-    text-align: center
-}
 
 
 /*********************TABLE ANIMATIONS*********************/
@@ -132,12 +110,6 @@ nav {
     font-family: 'Bree Serif', serif;
 }
 
-
-
-a{
-    font-size: 1.2em;
-}
-
 #link_list{
   padding-top: 1px;
   font-family: 'Varela Round', sans-serif;
@@ -152,18 +124,25 @@ a{
 
 /*********************************MOBILE***************************************/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 626px) {
    body,li,nav,ul,table,tr,td,img,form,footer,.well, {
-      font-size: 89%;
+      font-size: 1.2em;
    }
-	.nav {
-		padding-left: 9%
-	}
+    
+    #navTabs1{
+        padding-left: 19%
+    }
+    #newContainer{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 	.nav li a { 
     	padding: 2px 3px;
+        margin: auto;
 	}
+    
 	.dropdown-menu li a{
-		padding: 0 0 0 0;
+		height: 1px
 	}
 	
     h1 {
@@ -173,7 +152,7 @@ a{
       font-size: 2em;
     }
 	h3 {
-	  font-size: 1em;
+	  font-size: 1.4em;
 	}
     #searchHeader {
         font-size: .9em;
@@ -183,11 +162,13 @@ a{
         font-size:1.2em;
         padding: .7em;
     }
+    
+
 	#tableDiv{
 	  overflow-x: auto;
 	  overflow-y: auto;
 	  white-space: nowrap;
-		}
+    }
 
 	#disclaimer{
 		font-size: .5em;
@@ -203,10 +184,6 @@ a{
 		padding: .01%;
 		padding-right: 10%
 		}
-	
-	#navTabs1{
-		font-size: 70%;
-	}
 	
 	.dropdown-menu{
 		font-size: 70%;
@@ -232,69 +209,180 @@ a{
 	#youtubeWell{
 		margin-left: 10%;
 	}
-}
-
-/*****************************FULLSCREEN***************************************/
-
-@media only screen and (min-width: 993px) {
-	#navTitles{
-		margin-left: 27%
-		}
-	form.navbar-form {
-		padding-left: 16%
-	}
-	
-	#sugarLinks{
-    font-family: 'Bree Serif', serif;
-    font-size: 1.3em;
-    float: left;
-    text-decoration: none;	
-	}
-	#youtubeWell{
-		padding-left: 32%;
-	}
+    #resultsTable {
+        opacity: .95;
+        font-size: 1.3em;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
 }
 
 /*********************************IPAD***************************************/
 
-@media only screen and (min-width: 600px) and (max-width: 993px){
+@media only screen and (min-width: 626px) and (max-width: 769px){
 	#youtubeWell{
-		padding-left: 20%;
+		padding-left: 16%;
 	}
+    
+	.dropdown-menu li a{
+		height: 1px;
+	}
+    
+    #newContainer{
+        padding-left: 24%;
+        padding-right: 10%
+    }
+    
 	form.navbar-form {
-		padding-left:20%
+        padding-left: 10%;
+        max-width: 75%;
 	}
-	#navTitles{
-		margin-left: 12%
-	}
-	
+    
+    h1{
+        font-size: 4.3em;
+    }
+    
+    h2{
+        font-size: 2.7em;
+    }
+    
 	#sugarLinks{
-    font-family: 'Bree Serif', serif;
-    font-size: 1.3em;
-    float: left;
-    text-decoration: none;
-}
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3em;
+        float: left;
+        text-decoration: none;
+    }
 	
 	.fluidMedia {
-    position: relative;
-    padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
-    padding-top: 30px;
-    height: 100%;
-	width: 100%;
-    overflow: hidden;
+        position: relative;
+        padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-top: 30px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
 	}
 	
 	.fluidMedia iframe {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width:100%;
-    height: 100%;
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width:100%;
+        height: 100%;
 	}
-	ul{
+    
+    #resultsTable {
+        opacity: .95;
+        font-size: 1.3em;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+}
+}
+/*****************************Medium***************************************/
 
-		}	
+@media only screen and (min-width: 769px) and (max-width:993px) {
+    h1{
+        font-size: 5em;
+    }
+    
+    h2{
+        font-size: 2.5em;
+    }
+
+	form.navbar-form {
+        padding-left: 7%;
+		padding-right:10%;
+	}
+	
+	#sugarLinks{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3em;
+        float: left;
+        text-decoration: none;	
+	}
+	#youtubeWell{
+		padding-left: 19%;
+	}
+    #newContainer {
+        padding-left:23%;
+    }
+    #resultsTable {
+        font-size: 1.3em;
+        text-align: center;
+    }
+}
+/*****************************LARGE***************************************/
+
+@media only screen and (min-width: 994px) and (max-width:1200px) {
+    h1{
+        font-size: 5.5em;
+    }
+    
+    h2{
+        font-size: 2.7em;
+    }
+
+	form.navbar-form {
+        padding-left: 7%;
+		padding-right:18%;
+	}
+	
+	#sugarLinks{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3em;
+        float: left;
+        text-decoration: none;	
+	}
+    
+	#youtubeWell{
+		padding-left:26%;
+    
+	}
+    
+    #newContainer {
+        padding-left:29%;
+    }
+    
+    #resultsTable {
+        font-size: 1.3em;
+        text-align: center;
+    }
 }
 
+/*****************************FullScreen***************************************/
+@media only screen and (min-width: 1200px) {
+    h1{
+        font-size: 6em;
+    }
+    h2{
+        font-size: 3em;
+    }
+
+	form.navbar-form {
+        padding-left: 6%;
+		padding-right:18%;
+	}
+	
+	#sugarLinks{
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3em;
+        float: left;
+        text-decoration: none;	
+	}
+    
+	#youtubeWell{
+		padding-left: 30%;
+	}
+    
+    #newContainer {
+        padding-left:33%;
+    }
+    
+    #resultsTable {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+
+}
 
 
