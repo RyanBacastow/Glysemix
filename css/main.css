@@ -1,15 +1,40 @@
 /**********************Full Document**********************/
-
+/*
+.affix{
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: white;
+    margin-right: auto;
+    padding-right: 50px;
+    width:40%;
+}
+*/
+    
 .background {
-    background-image:url(/img/Produce.jpg);
-    background-size:cover;
+    background-image: url(/img/Produce.jpg);
+    background-size: cover;
+}
+
+#disclaimer {
+    font-size: .6em;
+}
+
+#tableDiv {
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
 }
 
 /**********************containers**********************/
-.container {
+
+.nav {
+    border: none;
 }
 
+
 /**********************Wells**********************/
+
 .well {
     border-radius: 10px;
     border-width: medium;
@@ -17,87 +42,68 @@
     opacity: .98;
 }
 
-/**********************Header**********************/
-/*
-font-family: 'Baloo', cursive;
-font-family: 'Arvo', serif;
-font-family: 'Lobster', cursive;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Bree Serif', serif;
-font-family: 'Varela Round', sans-serif;*/
 
+/**********************Header**********************/
 
 #headerWell {
-    padding: 1px;
-    margin: 1px;
+    position: relative;
+    padding: auto;
+    margin: auto;
     text-align: center;
     text-align: center;
     color: black;
     font-family: 'Bree Serif', serif;
-    font-size: 13px;
 }
 
-h1{
-    font-size: 6em;
+h1 {
     font-family: 'Lobster', cursive;
 }
 
-h2{
-    font-size: 4.5em;
+h2 {
     font-family: 'Lobster', cursive;
 }
 
-h3 {
-    font-size: 1.3em;
-}
-
-#searchHeader{
+#searchHeader {
     font-family: 'Varela Round', sans-serif;
 }
 
-#listTitle{
-	font-size: 1.2em;
+#listTitle {
+    font-size: 1.2em;
 }
+
+
 /**********************Footer**********************/
 
 footer {
     color: white;
     text-align: center;
-    font-size: 2em;
-    font-family: 'Lobster' , cursive;
+    font-family: 'Lobster', cursive;
 }
+
 
 /**********************nav pills**********************/
 
 nav {
-	align-content: center;
-	align-self: center;
-    padding: 1px;
-    margin: 1px;
+    align-content: center;
+    align-self: center;
+    padding-right: auto;
+    padding-left: auto;
+    margin: auto;
     text-align: center;
-    color: black;
     opacity: 1;
     font-family: 'Varela Round', sans-serif;
-    color: black;
-    font-size: 1.2em;
 }
 
 
 /**********************Table**********************/
 
 #resultsTable {
-    opacity: .95;
-    font-size: 1.3em;
-    text-align: center;
+    opacity: .99;
     font-family: 'Bree Serif', serif;
 }
 
 
 /**********************Form**********************/
-
-#myForm {
-    text-align: center
-}
 
 
 /*********************TABLE ANIMATIONS*********************/
@@ -127,174 +133,343 @@ nav {
 
 
 /*********************sugar-and-health.html*********************/
-#youtubeWell{
+
+#youtubeWell {
     text-align: center;
     font-family: 'Bree Serif', serif;
 }
 
-
-
-a{
-    font-size: 1.2em;
+#link_list {
+    padding-top: 1px;
+    font-family: 'Varela Round', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
-#link_list{
-  padding-top: 1px;
-  font-family: 'Varela Round', sans-serif;
-  list-style: none;
-  text-decoration: none;
-}
-
-#disclaimer{
-	font-size: .7em
+#disclaimer {
+    font-size: .7em
 }
 
 
 /*********************************MOBILE***************************************/
 
-@media only screen and (max-width: 600px) {
-   body,li,nav,ul,table,tr,td,img,form,footer,.well, {
-      font-size: 89%;
-   }
-	.nav {
-		padding-left: 9%
-	}
-	.nav li a { 
-    	padding: 2px 3px;
-	}
-	.dropdown-menu li a{
-		padding: 0 0 0 0;
-	}
-	
-    h1 {
-      font-size: 3em;
-   }
-    h2 {
-      font-size: 2em;
+@media only screen and (max-width: 626px) {
+    body,
+    li,
+    nav,
+    ul,
+    table,
+    tr,
+    td,
+    img,
+    form,
+    footer,
+    .well,
+    {
+        font-size: 1.2em;
     }
-	h3 {
-	  font-size: 1em;
-	}
+    #navTabs1 {
+        padding-left: 19%
+    }
+    #newContainer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .nav li a {
+        padding: 2px 3px;
+        margin: auto;
+    }
+    .dropdown-menu li a {
+        height: 1px
+    }
+    h1 {
+        font-size: 3.6em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
     #searchHeader {
         font-size: .9em;
     }
-	
-    .dropdown-menu{
-        font-size:1.2em;
+    .dropdown-menu {
+        font-size: 1.2em;
         padding: .7em;
     }
-	#tableDiv{
-	  overflow-x: auto;
-	  overflow-y: auto;
-	  white-space: nowrap;
-		}
 
-	#disclaimer{
-		font-size: .5em;
-	}
-
-	#sugarLinks{
-		font-family: 'Bree Serif', serif;
-		font-size: 1.2em;
-		text-decoration: none;
-	}
-	
-	ul{
-		padding: .01%;
-		padding-right: 10%
-		}
-	
-	#navTabs1{
-		font-size: 70%;
-	}
-	
-	.dropdown-menu{
-		font-size: 70%;
-	}
-	
-	.fluidMedia {
-    position: relative;
-    padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
-    padding-top: 30px;
-    height: 100%;
-	width: 100%;
-    overflow: hidden;
-	}
-	
-	.fluidMedia iframe {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width:100%;
-    height: 100%;
-	padding-bottom: 14px;
-	}
-	#youtubeWell{
-		margin-left: 10%;
-	}
+    #sugarLinks {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+    ul {
+        padding: .01%;
+        padding-right: 10%
+    }
+    .dropdown-menu {
+        font-size: 70%;
+    }
+    .fluidMedia {
+        position: relative;
+        padding-bottom: 35%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-top: 21%;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .fluidMedia iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #youtubeWell {
+        margin-left: 10%;
+    }
+    #youtubeWell li a {
+        font-size: 1.3em
+    }
+    #resultsTable {
+        opacity: .95;
+        font-size: 1.3em;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
 }
 
-/*****************************FULLSCREEN***************************************/
-
-@media only screen and (min-width: 993px) {
-	#navTitles{
-		margin-left: 27%
-		}
-	form.navbar-form {
-		padding-left: 16%
-	}
-	
-	#sugarLinks{
-    font-family: 'Bree Serif', serif;
-    font-size: 1.3em;
-    float: left;
-    text-decoration: none;	
-	}
-	#youtubeWell{
-		padding-left: 32%;
-	}
-}
 
 /*********************************IPAD***************************************/
 
-@media only screen and (min-width: 600px) and (max-width: 993px){
-	#youtubeWell{
-		padding-left: 20%;
-	}
-	form.navbar-form {
-		padding-left:20%
-	}
-	#navTitles{
-		margin-left: 12%
-	}
-	
-	#sugarLinks{
-    font-family: 'Bree Serif', serif;
-    font-size: 1.3em;
-    float: left;
-    text-decoration: none;
+@media only screen and (min-width: 626px) and (max-width: 769px) {
+    #youtubeWell {
+        padding-left: 12%;
+    }
+    .dropdown-menu li a {
+        height: 1px;
+    }
+    #newContainer {
+        padding-left: 17%;
+    }
+    form.navbar-form {
+        padding-left: 17%;
+        max-width: 75%;
+    }
+    h1 {
+        font-size: 4.3em;
+    }
+    h2 {
+        font-size: 2.7em;
+    }
+    h3{
+        font-size: 1.3em
+    }
+    #sugarLinks {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3em;
+        float: left;
+        text-decoration: none;
+    }
+    #resultsTable {
+        opacity: .95;
+        font-size: 1.3em;
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    }
+    #navTabs1 {
+        font-size: 1.3em;
+    }
+    .fluidMedia {
+        position: relative;
+        padding-bottom: 34%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-top: 85px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .fluidMedia iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #youtubeWell li a {
+        font-size: 1.3em
+    }
 }
-	
-	.fluidMedia {
-    position: relative;
-    padding-bottom: 34.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
-    padding-top: 30px;
-    height: 100%;
-	width: 100%;
-    overflow: hidden;
-	}
-	
-	.fluidMedia iframe {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width:100%;
-    height: 100%;
-	}
-	ul{
 
-		}	
+
+/*****************************Medium***************************************/
+
+@media only screen and (min-width: 769px) and (max-width:993px) {
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3{
+        font-size: 1.3em
+    }
+    form.navbar-form {
+        padding-left: 14%;
+        padding-right: 10%;
+    }
+    #sugarLinks {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3em;
+        float: left;
+        text-decoration: none;
+    }
+    #youtubeWell {
+        padding-left: 17%;
+    }
+    #newContainer {
+        padding-left: 18%;
+    }
+    #resultsTable {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    #navTabs1 {
+        font-size: 1.3em;
+    }
+    .fluidMedia {
+        position: relative;
+        padding-bottom: 34%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-top: 54px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .fluidMedia iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #youtubeWell li a {
+        font-size: 1.3em
+    }
 }
 
 
+/*****************************LARGE***************************************/
 
+@media only screen and (min-width: 994px) and (max-width:1200px) {
+    h1 {
+        font-size: 5.5em;
+    }
+    h2 {
+        font-size: 2.7em;
+    }
+    h3{
+        font-size: 1.4em
+    }
+    form.navbar-form {
+        padding-left: 17%;
+        padding-right: 18%;
+    }
+    #sugarLinks {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3em;
+        float: left;
+        text-decoration: none;
+    }
+    #youtubeWell {
+        padding-left: 18%;
+    }
+    #youtubeWell li a {
+        font-size: 1.3em
+    }
+    #newContainer {
+        padding-left: 20%;
+    }
+    #resultsTable {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    #navTabs1 {
+        font-size: 1.7em;
+    }
+    .fluidMedia {
+        position: relative;
+        padding-bottom: 34%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-top: 54px;
+        height: 280px;
+        width: 500px;
+        overflow: hidden;
+    }
+    .fluidMedia iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/*****************************FullScreen***************************************/
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 6em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    h3{
+        font-size: 1.6em
+    }
+    form.navbar-form {
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+    #sugarLinks {
+        font-family: 'Bree Serif', serif;
+        font-size: 1.3em;
+        float: left;
+        text-decoration: none;
+    }
+    #youtubeWell {
+        padding-left: 15%;
+    }
+    #newContainer {
+        padding-left: 23%;
+    }
+    #resultsTable {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    #navTabs1 {
+        font-size: 2em;
+    }
+    .fluidMedia {
+        position: relative;
+        padding-bottom: 34%;
+        /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+        padding-top: 54px;
+        height: 450px;
+        width: 700px;
+        overflow: hidden;
+    }
+    .fluidMedia iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #youtubeWell li a {
+        font-size: 1.5em
+    }
+}
