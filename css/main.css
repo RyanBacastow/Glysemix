@@ -1,14 +1,30 @@
 /**********************Full Document**********************/
-
+/*
+.affix{
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: white;
+    margin-right: auto;
+    padding-right: 50px;
+    width:40%;
+}
+*/
+    
 .background {
     background-image: url(/img/Produce.jpg);
     background-size: cover;
 }
 
 #disclaimer {
-    font-size: .5em;
+    font-size: .6em;
 }
 
+#tableDiv {
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+}
 
 /**********************containers**********************/
 
@@ -173,7 +189,7 @@ nav {
         font-size: 2.5em;
     }
     h3 {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     #searchHeader {
         font-size: .9em;
@@ -182,11 +198,7 @@ nav {
         font-size: 1.2em;
         padding: .7em;
     }
-    #tableDiv {
-        overflow-x: auto;
-        overflow-y: auto;
-        white-space: nowrap;
-    }
+
     #sugarLinks {
         font-family: 'Bree Serif', serif;
         font-size: 1.2em;
@@ -252,6 +264,9 @@ nav {
     h2 {
         font-size: 2.7em;
     }
+    h3{
+        font-size: 1.3em
+    }
     #sugarLinks {
         font-family: 'Bree Serif', serif;
         font-size: 1.3em;
@@ -297,6 +312,9 @@ nav {
     }
     h2 {
         font-size: 2.5em;
+    }
+    h3{
+        font-size: 1.3em
     }
     form.navbar-form {
         padding-left: 14%;
@@ -352,6 +370,9 @@ nav {
     h2 {
         font-size: 2.7em;
     }
+    h3{
+        font-size: 1.4em
+    }
     form.navbar-form {
         padding-left: 17%;
         padding-right: 18%;
@@ -406,6 +427,9 @@ nav {
     h2 {
         font-size: 3em;
     }
+    h3{
+        font-size: 1.6em
+    }
     form.navbar-form {
         padding-left: 18%;
         padding-right: 18%;
@@ -434,7 +458,7 @@ nav {
         padding-bottom: 34%;
         /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
         padding-top: 54px;
-        height: 400px;
+        height: 450px;
         width: 700px;
         overflow: hidden;
     }

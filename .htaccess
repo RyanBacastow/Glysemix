@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 RewriteEngine On 
 RewriteCond %{SERVER_PORT} 80 
 RewriteCond %{REQUEST_URI} glysemix.com
 RewriteRule ^(.*)$ https://www.ryanbacastow.com/glysemix.com/$1 [R,L]
+=======
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
+>>>>>>> debdbfda45a321ae9a13701114600c11424c7759
