@@ -263,7 +263,7 @@ app.controller('myController', function ($scope, $http) {
             "appId": "f4ba6075",
             "appKey": "82ea3540c0cd81efe84c090999363701",
             "query": ($scope.userInput),
-            "fields": ["item_name", "brand_name", "nf_serving_size_qty", "nf_serving_size_unit", "nf_total_carbohydrate", "nf_sugars", "nf_calories", "nf_dietary_fiber",],
+            "fields": ["item_name", "brand_name", "nf_serving_size_qty", "nf_serving_size_unit", "nf_total_carbohydrate", "nf_sugars","nf_dietary_fiber", "nf_calories", "nf_dietary_fiber"],
             "filters": {
                 "item_type": 2
             }
