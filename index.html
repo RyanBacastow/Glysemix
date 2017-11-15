@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="background">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="https://www.glysemix.com/img/Produce.jpg"/>
+	<meta property="og:description" content="A tool for getting the Glycemic information about all your favorite foods, restaurants, and ingredients. "/>
+	<meta property="og:url"content="https://www.glysemix.com"/>
+	<meta property="og:title" content="https://www.Glysemix.com"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Glysemix</title>
+    <!-- Bootstrap -->
+    <!-- include the needed font from google api -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Archivo+Black" />
+    <!-- include the nutrition label plugin css file -->
+    <link rel="stylesheet" type="text/css" href="/bower_components/nutrition-label-jquery-plugin/dist/css/nutritionLabel-min.css">
+    <!-- include the jquery library -->
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- include the nutrition label plugin js file -->
+    <script type="text/javascript" src="/bower_components/nutrition-label-jquery-plugin/dist/js/nutritionLabel-min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Baloo|Bree+Serif|Josefin+Sans|Lobster|Varela+Round" rel="stylesheet">
+    <!--My style sheet-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body class="background" ng-app='myApp'>
+    <div ng-view></div>
+
+    <!--ANGULAR SCRIPTS-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/modules/search1.js"></script>
+    <script type="text/javascript" src="scripts/modules/search3.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components\angular-modal-service\dst\angular-modal-service.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="scripts/app.js"></script>
+</body>
+<footer>
+    <h3>Powered by the Nutritionix API:</h3>
+    <a href="http://www.nutritionix.com/api"><img src="https://d2eawub7utcl6.cloudfront.net/images/poweredby_nutritionix_api.png" border="0"></a>
+</footer>
+</html>
