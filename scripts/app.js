@@ -30,7 +30,10 @@ app.controller('myController', function ($scope, $http) {
                 "item_type": 2
             },
         }).then(function (response) {
-            $scope.nutrition = response.data.hits;
+			if (response.data.hits<1){
+				alert("Sorry, I couldn't find results for this item. Maybe try switching the search to restaurants or ingredients.")}
+			else{
+				$scope.nutrition = response.data.hits};
         });
     };
 });
@@ -63,8 +66,6 @@ app.directive("tableResults", function () {
         templateUrl: "templates/table-results.html"
     }
 });
-
-
 
 
 
