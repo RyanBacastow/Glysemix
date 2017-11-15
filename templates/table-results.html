@@ -12,14 +12,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="information in nutrition">
-                <td>{{information.fields.item_name}}</td>
-                <td>{{information.fields.brand_name}}</td>
+            <tr ng-repeat="information in nutrition" ng-click="showDetail($event)">
+                <td  id='name'>{{information.fields.item_name}}</td>
+                <td id='brand'>{{information.fields.brand_name}}</td>
                 <td><strong>{{information.fields.nf_total_carbohydrate}}</strong></td>
                 <td><strong>{{information.fields.nf_sugars}}</strong></td>
 				<td><strong>{{information.fields.nf_dietary_fiber}}</strong></td>
-                <td><span>{{information.fields.nf_serving_size_qty}}</span><span> {{information.fields.nf_serving_size_unit}}</span></td>
-                <td>{{information.fields.nf_calories}}</td>
+                <td id = 'serving'><span>{{information.fields.nf_serving_size_qty}}</span><span> {{information.fields.nf_serving_size_unit}}</span></td>
+                <td id='calories'>{{information.fields.nf_calories}}</td>
             </tr>
         </tbody>
     </table>

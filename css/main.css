@@ -20,11 +20,6 @@
     font-size: .6em;
 }
 
-#tableDiv {
-    overflow-x: auto;
-    overflow-y: auto;
-    white-space: nowrap;
-}
 
 /**********************containers**********************/
 
@@ -204,13 +199,16 @@ nav {
         font-size: 1.2em;
         text-decoration: none;
     }
+	
     ul {
         padding: .01%;
         padding-right: 10%
     }
+	
     .dropdown-menu {
         font-size: 70%;
     }
+	
     .fluidMedia {
         position: relative;
         padding-bottom: 35%;
@@ -233,14 +231,68 @@ nav {
     #youtubeWell li a {
         font-size: 1.3em
     }
+
     #resultsTable {
-        opacity: .95;
-        font-size: 1.3em;
-        text-align: center;
         font-family: 'Bree Serif', serif;
+		white-space: nowrap;
     }
 }
 
+@media 
+only screen and (max-width: 1200px),
+(min-device-width: 1200px) and (max-device-width: 1200px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: auto;
+		left: -9999px;
+		bottom: 100px;
+	}
+	
+	tr { border: 2px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	#name, #brand, #serving, #calories, strong.ng-binding{ 
+		padding-left: 28%; 
+		padding-right: 3%;
+		white-space: nowrap;
+	}
+
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 20px;
+		padding-left: 15px;
+		padding-right: 15px; 
+		white-space: nowrap;
+	}
+
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Item"; }
+	td:nth-of-type(2):before { content: "Brand"; }
+	td:nth-of-type(3):before { content: "Total Carbs(g)"; }
+	td:nth-of-type(4):before { content: "Total Sugar(g)"; }
+	td:nth-of-type(5):before { content: "Dietary Fiber(g)"; }
+	td:nth-of-type(6):before { content: "Serving"; }
+	td:nth-of-type(7):before { content: "Calories*"; }
+}
 
 /*********************************IPAD***************************************/
 
@@ -301,6 +353,12 @@ nav {
     #youtubeWell li a {
         font-size: 1.3em
     }
+	#tableDiv {
+		overflow-x: auto;
+		overflow-y: auto;
+		white-space: nowrap;
+}
+
 }
 
 
@@ -333,7 +391,7 @@ nav {
         padding-left: 18%;
     }
     #resultsTable {
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-align: center;
     }
     #navTabs1 {
@@ -358,6 +416,12 @@ nav {
     #youtubeWell li a {
         font-size: 1.3em
     }
+	#tableDiv {
+		overflow-x: auto;
+		overflow-y: auto;
+		white-space: nowrap;
+}
+
 }
 
 
@@ -415,6 +479,12 @@ nav {
         width: 100%;
         height: 100%;
     }
+	#tableDiv {
+		overflow-x: auto;
+		overflow-y: auto;
+		white-space: nowrap;
+}
+
 }
 
 
@@ -472,4 +542,10 @@ nav {
     #youtubeWell li a {
         font-size: 1.5em
     }
+	#tableDiv {
+		overflow-x: auto;
+		overflow-y: auto;
+		white-space: nowrap;
+}
+
 }
