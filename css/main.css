@@ -573,6 +573,7 @@ only screen and (max-width: 1200px),
         font-size: 1.7em;
 }
 	
+}
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
 	 background-color: lightyellow;
 }
