@@ -296,9 +296,6 @@ only screen and (max-width: 1200px),
 	td:nth-of-type(6):before { content: "Serving"; }
 	td:nth-of-type(7):before { content: "Calories*"; }
 
-	.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-	  background-color: lightyellow;
-	}
 }
 /*********************************IPAD***************************************/
 
@@ -566,17 +563,16 @@ only screen and (max-width: 1200px),
     #youtubeWell li a {
         font-size: 1.5em
     }
-<<<<<<< HEAD
 	#tableDiv {
 		overflow-x: auto;
 		overflow-y: auto;
 		white-space: nowrap;
 }
-
-=======
     
     footer{
         font-size: 1.7em;
 }
->>>>>>> caf2fa974906e134fbd7223d4d216f15b87d1cbb
+	
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+	 background-color: lightyellow;
 }
