@@ -295,8 +295,11 @@ only screen and (max-width: 1200px),
 	td:nth-of-type(5):before { content: "Dietary Fiber(g)"; }
 	td:nth-of-type(6):before { content: "Serving"; }
 	td:nth-of-type(7):before { content: "Calories*"; }
-}
 
+	.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+	  background-color: lightyellow;
+	}
+}
 /*********************************IPAD***************************************/
 
 @media only screen and (min-width: 626px) and (max-width: 769px) {
