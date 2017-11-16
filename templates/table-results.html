@@ -20,9 +20,7 @@
 				<td><strong>{{information.fields.nf_dietary_fiber}}</strong></td>
                 <td id = 'serving'><span>{{information.fields.nf_serving_size_qty}}</span><span> {{information.fields.nf_serving_size_unit}}</span></td>
                 <td id='calories'>{{information.fields.nf_calories}}</td>
-				<td ng-show="showme"> 
-					<div>{{information.fields.item_name}}</div>
-				</td>
+				<td ng-show="showme"><nutr-label></nutr-label></td>
             </tr>
         </tbody>
     </table>

@@ -67,6 +67,13 @@ app.directive("tableResults", function () {
     }
 });
 
+app.directive("nutrLabel", function () {
+    return {
+        restrict: "E",
+        templateUrl: "templates/nutr-label.html"
+    }
+});
+
 
 
 
