@@ -11,8 +11,8 @@
                 <td>Calories*</td>
             </tr>
         </thead>
-        <tbody>
-            <tr ng-repeat="information in nutrition" ng-click="showDetail($event)">
+        <tbody >
+            <tr ng-repeat="information in nutrition" ng-click="showme=true">
                 <td  id='name'>{{information.fields.item_name}}</td>
                 <td id='brand'>{{information.fields.brand_name}}</td>
                 <td><strong>{{information.fields.nf_total_carbohydrate}}</strong></td>
@@ -20,8 +20,12 @@
 				<td><strong>{{information.fields.nf_dietary_fiber}}</strong></td>
                 <td id = 'serving'><span>{{information.fields.nf_serving_size_qty}}</span><span> {{information.fields.nf_serving_size_unit}}</span></td>
                 <td id='calories'>{{information.fields.nf_calories}}</td>
+				<td ng-show="showme"> 
+					<div>{{information.fields.item_name}}</div>
+				</td>
             </tr>
         </tbody>
     </table>
+	
 	<p id='disclaimer'>*Calories alone do not give a full picture of the endocrine/insulin responses to food items.</p>
 </div>
