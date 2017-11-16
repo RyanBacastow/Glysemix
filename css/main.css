@@ -301,7 +301,7 @@ only screen and (max-width: 1200px),
 
 @media only screen and (min-width: 626px) and (max-width: 769px) {
     #youtubeWell {
-        padding-left: 12%;
+        padding-left: 10%;
     }
     .dropdown-menu li a {
         height: 1px;
@@ -356,18 +356,17 @@ only screen and (max-width: 1200px),
     #youtubeWell li a {
         font-size: 1.3em
     }
-<<<<<<< HEAD
+	
 	#tableDiv {
 		overflow-x: auto;
 		overflow-y: auto;
 		white-space: nowrap;
-}
+	}
 
-=======
+
     footer{
         font-size: 1.5em;
     }
->>>>>>> caf2fa974906e134fbd7223d4d216f15b87d1cbb
 }
 
 
@@ -394,7 +393,7 @@ only screen and (max-width: 1200px),
         text-decoration: none;
     }
     #youtubeWell {
-        padding-left: 17%;
+        padding-left: 11%;
     }
     #newContainer {
         padding-left: 18%;
@@ -425,18 +424,18 @@ only screen and (max-width: 1200px),
     #youtubeWell li a {
         font-size: 1.3em
     }
-<<<<<<< HEAD
+	
 	#tableDiv {
 		overflow-x: auto;
 		overflow-y: auto;
 		white-space: nowrap;
 }
 
-=======
+
     footer{
         font-size: 1.6em;
-}
->>>>>>> caf2fa974906e134fbd7223d4d216f15b87d1cbb
+	}
+
 }
 
 
