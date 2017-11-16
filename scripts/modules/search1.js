@@ -23,11 +23,11 @@ restaurantSearch.controller('search1Ctrl', function ($scope, $http) {
 					   "nf_calories"],
 			"limit": 100,
             "filters": { 
-                "item_type": 3
+                "item_type": 1
             },
         }).then(function (response) {
 			if (response.data.hits<1){
-				alert("Sorry, I couldn't find results for this item. Maybe try switching the search to restaurants or ingredients.")}
+				alert("Sorry, I couldn't find any results for this item. I may not have a record of it. Try switching to Products or Ingredients in the 'Search Options' menu.")}
 			else{
 				$scope.nutrition = response.data.hits};
         });

@@ -31,7 +31,7 @@ app.controller('myController', function ($scope, $http) {
             },
         }).then(function (response) {
 			if (response.data.hits<1){
-				alert("Sorry, I couldn't find results for this item. Maybe try switching the search to restaurants or ingredients.")}
+				alert("Sorry, I couldn't find any results for this item. Maybe try switching the search to Restaurants or Ingredients in the 'Search Options' menu.")}
 			else{
 				$scope.nutrition = response.data.hits};
         });
