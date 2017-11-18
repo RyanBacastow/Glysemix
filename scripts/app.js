@@ -67,6 +67,12 @@ app.directive("tableResults", function () {
     }
 });
 
+app.directive("labelOne", function () {
+    return {
+        restrict: "E",
+        templateUrl: "bower_compnents/nutrition-label-jquery-plugin/dist/2018-version/demo-mini.html"
+    }
+});
 
 
 
