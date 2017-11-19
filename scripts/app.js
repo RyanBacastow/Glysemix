@@ -25,7 +25,8 @@ app.controller('myController', function ($scope, $http) {
 					   "nf_total_carbohydrate",
 					   "nf_sugars",
 					   "nf_calories"],
-			"limit": 100,
+            "offset":0,
+			"limit": 50,
             "filters": { 
                 "item_type": 2
             },
@@ -33,7 +34,8 @@ app.controller('myController', function ($scope, $http) {
 			if (response.data.hits<1){
 				alert("Sorry, I couldn't find any results for this item. Maybe try switching the search to Restaurants or Ingredients in the 'Search Options' menu.")}
 			else{
-				$scope.nutrition = response.data.hits};
+				$scope.nutrition = response.data.hits
+                console.log(response.data.hits)};
         });
     };
 });

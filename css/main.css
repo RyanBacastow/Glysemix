@@ -299,7 +299,7 @@ only screen and (max-width: 1200px),
 }
 /*********************************IPAD***************************************/
 
-@media only screen and (min-width: 626px) and (max-width: 769px) {
+@media only screen and (min-width: 626px) and (max-width: 1200px) {
     #youtubeWell {
         padding-left: 10%;
     }
@@ -356,12 +356,6 @@ only screen and (max-width: 1200px),
     #youtubeWell li a {
         font-size: 1.3em
     }
-	
-	#tableDiv {
-		overflow-x: auto;
-		overflow-y: auto;
-		white-space: nowrap;
-	}
 
 
     footer{
@@ -424,13 +418,6 @@ only screen and (max-width: 1200px),
     #youtubeWell li a {
         font-size: 1.3em
     }
-	
-	#tableDiv {
-		overflow-x: auto;
-		overflow-y: auto;
-		white-space: nowrap;
-}
-
 
     footer{
         font-size: 1.6em;
