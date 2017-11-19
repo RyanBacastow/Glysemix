@@ -1,25 +1,16 @@
 /**********************Full Document**********************/
-/*
-.affix{
-    position: absolute;
-    overflow: hidden;
-    white-space: nowrap;
-    background-color: white;
-    margin-right: auto;
-    padding-right: 50px;
-    width:40%;
-}
-*/
 
 .background {
     background-image: url(/img/Produce.jpg);
-    background-size: cover;
 }
 
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+	 background-color: lightgray;
+}
 #disclaimer {
-    font-size: .6em;
+    font-size: .8em;
 }
-
+    
 
 /**********************containers**********************/
 
@@ -149,7 +140,6 @@ nav {
 /*********************************MOBILE***************************************/
 
 @media only screen and (max-width: 626px) {
-    body,
     li,
     nav,
     ul,
@@ -162,6 +152,9 @@ nav {
     .well,
     {
         font-size: 1.3em;
+    }
+    tbody{
+        font-size: 1.2em
     }
     #navTabs1 {
         padding-left: 19%
@@ -480,24 +473,25 @@ only screen and (max-width: 1200px),
         width: 100%;
         height: 100%;
     }
-<<<<<<< HEAD
-	#tableDiv {
-		overflow-x: auto;
-		overflow-y: auto;
-		white-space: nowrap;
-}
-
-=======
+    
     footer{
     font-size: 1.7em;
 }
->>>>>>> caf2fa974906e134fbd7223d4d216f15b87d1cbb
+    
+    .background{
+        
+    }
 }
 
 
 /*****************************FullScreen***************************************/
 
 @media only screen and (min-width: 1200px) {
+    #resultsTable{
+    overflow-y: scroll;
+    max-height: 425px
+}
+    
     h1 {
         font-size: 6em;
     }
@@ -549,17 +543,11 @@ only screen and (max-width: 1200px),
     #youtubeWell li a {
         font-size: 1.5em
     }
-	#tableDiv {
-		overflow-x: auto;
-		overflow-y: auto;
-		white-space: nowrap;
-}
     
     footer{
         font-size: 1.7em;
 }
-	
+    .background{
+        background-size: cover;}
 }
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-	 background-color: lightgray;
-}
+
